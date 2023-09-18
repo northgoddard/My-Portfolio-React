@@ -22,7 +22,7 @@ function Page() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>
+        <div className="page">
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
         </div>

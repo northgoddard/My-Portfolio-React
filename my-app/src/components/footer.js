@@ -3,12 +3,16 @@ import '../App.css';
 
 function Footer() {
     return (
-        <footer className='footer'>
+    <div className='footer-container'>
+        <footer className='footer--pin'>
             <p> © 2022</p>
-            <div>
-                <a href="https://github.com/northgoddard">GitHub</a>
+            <div className='footer-links'>
+                <a href="https://github.com/northgoddard"> GitHub </a>
+                <a href="https://twitter.com/North_Goddard"> Twitter </a>
+                <a href="https://www.linkedin.com/in/north-goddard-815aa1291/"> LinkedIn </a>
             </div>
         </footer>
+    </div>
     )
 }
 

@@ -1,63 +1,49 @@
 import React from "react";
+import { useState } from "react";
 
 function Contact() {
+    const [email, setEmail] = useState('');
+    const [inputName, setName] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleInputChange = (e) =>{
+
+        const {name, value} = e.target;
+        console.log(e.target);
+
+        if(name === 'name'){
+            console.log(value);
+             setName(value)
+        }else if (name === 'email'){
+            console.log(value);
+             setEmail(value)
+        }else if (name === 'message'){
+            console.log(value);
+             setMessage(value)
+        }
+    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault(); 
+        setName('')
+        setEmail('')
+        setMessage('')
+    }
     return (
-<div className='ContactForm'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
-            <div className='contactForm'>
-              <form id='contact-form' noValidate>
-
-                <div className='row formRow'>
-                  <div className='col-6'>
-                    <input
-                      type='text'
-                      name='name'
-                      className='form-control formInput'
-                      placeholder='Name'
-                    ></input>
-                  </div>
-                  <div className='col-6'>
-                    <input
-                      type='email'
-                      name='email'
-                      className='form-control formInput'
-                      placeholder='Email address'
-                    ></input>
-                  </div>
+        <div class="form-center">
+            <form className="contact-form">
+                <div className="mb-3">
+                    <input type="email" value={email} onChange={handleInputChange} placeholder='email' className="form-control" name="email"/> 
                 </div>
-
-                <div className='row formRow'>
-                  <div className='col'>
-                    <input
-                      type='text'
-                      name='subject'
-                      className='form-control formInput'
-                      placeholder='Subject'
-                    ></input>
-                  </div>
+                <div className="mb-3">
+                    <input type="text" value={inputName} onChange={handleInputChange} placeholder='name' className="form-control" name="name"/> 
                 </div>
-
-                <div className='row formRow'>
-                  <div className='col'>
-                    <textarea
-                      rows={3}
-                      name='message'
-                      className='form-control formInput'
-                      placeholder='Message'
-                    ></textarea>
-                  </div>
+                <div className="mb-3">
+                    <input type="textarea" value={message} onChange={handleInputChange} placeholder='message' className="form-control" name="message"/> 
                 </div>
-                <button className='submit-btn' type='submit'>
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
+                <button type="submit" onClick={handleFormSubmit} className="btn">Submit</button>
+            </form>
         </div>
-      </div>
-    </div>
     );
 }
 
