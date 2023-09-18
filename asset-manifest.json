@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/northgoddard/static/css/main.b1c0964a.css",
+    "main.js": "/northgoddard/static/js/main.b765fa57.js",
+    "static/media/about-me.jpg": "/northgoddard/static/media/about-me.c08c781be74591058576.jpg",
+    "static/media/project3.png": "/northgoddard/static/media/project3.b620e1305072f989c040.png",
+    "static/media/project1.png": "/northgoddard/static/media/project1.d5469bbe9e6b68beeff4.png",
+    "static/media/project2.png": "/northgoddard/static/media/project2.60f0c6e4b06678792b16.png",
+    "index.html": "/northgoddard/index.html",
+    "main.b1c0964a.css.map": "/northgoddard/static/css/main.b1c0964a.css.map",
+    "main.b765fa57.js.map": "/northgoddard/static/js/main.b765fa57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1c0964a.css",
+    "static/js/main.b765fa57.js"
+  ]
+}
