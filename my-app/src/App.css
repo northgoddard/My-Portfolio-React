@@ -1,38 +1,99 @@
-.App {
+* {
+  background-color: grey;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+}
+
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+header h1 {
+  margin: 3% 15%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  background-color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+
+.about {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 100px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.about h1 {
+  text-align: center;
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about p {
+  font-size: 30px;
+}
+
+img {
+  border-radius: 75%;
+  width: 300px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .desc {
+      font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bottom-img {
+      flex: 1 1 50%;
   }
 }
