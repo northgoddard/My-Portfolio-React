@@ -9,10 +9,10 @@
 
 ## Description
 
-This is my portfolio updated to incorperate react.js as the primary source of code. This project has helped demonstrate a understanding of react components and how to link them to the app.js.
+This is my portfolio updated to incorperate react.js as the primary source of code. This project has helped demonstrate a understanding of react components and how to link them to the app.js. Those components include a header, footer, navbar and project that appear on multiple pages.
 
 ## Images
-<img width="720" alt="Screenshot" src="Screenshot.png">
+<img width="720" alt="Screenshot" src="/src/images/Screenshot .png">
 
 ## Link 
 
